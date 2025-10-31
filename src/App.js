@@ -67,8 +67,9 @@ function App() {
   }
 
   const cartCtx = {
-    items: [],
-    addItemsToCart: handleAddItemToCart
+    items: shoppingCart.items,
+    addItemsToCart: handleAddItemToCart,
+    udateCartItemQuantity: handleUpdateCartItemQuantity
   }
 
   return (
